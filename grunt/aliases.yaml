@@ -1,0 +1,22 @@
+# Grunt aliases
+---
+# Bump version task(s)
+'bumpit':
+- 'replace:readme_txt'
+- 'replace:main_bump'
+- 'notify:bump'
+# Checktextdomain and makepot task(s)
+'build:i18n':
+- 'checktextdomain'
+- 'makepot'
+- 'newer:potomo'
+- 'notify:i18n'
+# Build everything
+build:
+- 'clean:build'
+- 'copy'
+- 'compress'
+- 'notify:build'
+# Default task
+default:
+- 'makepot'
