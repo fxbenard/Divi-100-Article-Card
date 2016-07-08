@@ -26,6 +26,8 @@ class ET_Divi_100_Article_Card_Config {
 	function __construct() {
 		add_filter( 'et_divi_100_settings', array( $this, 'register' ) );
 		add_action( 'plugins_loaded',       array( $this, 'init' ) );
+		add_action( 'plugins_loaded', array( $this, 'add_localization' ), 1 );
+
 	}
 
 	/**
@@ -71,6 +73,16 @@ class ET_Divi_100_Article_Card_Config {
 		$settings[ $info['plugin_slug'] ] = $info;
 
 		return $settings;
+	}
+
+	/**
+	 * Adds plugin localization
+	 * Domain: divi-100-article-card
+	 *
+	 * @return void
+	 */
+	function add_localization() {
+		load_plugin_textdomain( 'divi-100-article-card', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**
