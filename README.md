@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/andyhqtran/Divi-100-Article-Card.svg)](https://github.com/andyhqtran/Divi-100-Article-Card/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/andyhqtran/Divi-100-Article-Card.svg)](https://github.com/andyhqtran/Divi-100-Article-Card/network)
 
-The **Divi 100 - Article Card Plugin** is made for Divi as apart of the [Divi 100 series](www.elegantthemes.com/blog/theme-sneak-peeks/the-divi-100-marathon-and-the-countdown-to-divi-3-0) by Elegant Themes. This plugin looks for any page that has the **Blog Module** enabled and applies a new style too.
+This plugin is a fork of **Divi 100 - Article Card Plugin** made for Divi as apart of the [Divi 100 series](www.elegantthemes.com/blog/theme-sneak-peeks/the-divi-100-marathon-and-the-countdown-to-divi-3-0) by Elegant Themes. This plugin looks for any page that has the **Blog Module** enabled and applies a new style too, fully i18n ready and French translated.
 
 ## What's Included
 ```
@@ -26,9 +26,13 @@ Divi-100-Article-Card
 │   ├── divi-100-setup.php
 │   └── js
 │       └── admin-scripts.js
+├── languages
+│   ├── divi-100-article-card.pot
+│   ├── divi-100-article-card-fr_FR.po
+│   └── divi-100-article-card-fr_FR.mo
 └── preview.gif
 
-6 directories, 11 files
+7 directories, 14 files
 ```
 
 ## Installation
@@ -52,7 +56,7 @@ When opening an issue, please make sure you assign the proper label. For example
 - [Justin Kwak](https://dribbble.com/justinkwak)
 
 ## License
-Copyright © 2016 [Elegant Themes](http://elegantthemes.com). Code released undered the [GPL License](https://github.com/andyhqtran/divi-100-article-card/blob/master/LICENSE).
+Copyright © 2016 [Elegant Themes](http://elegantthemes.com). Code released undered the [GPL License](https://github.com/fxbenard/divi-100-article-card/blob/master/LICENSE).
 
 >    This program is free software: you can redistribute it and/or modify
 >    it under the terms of the GNU General Public License as published by
