@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Custom_Article_Cards
- * @version 0.0.3
+ * @version 0.0.4
  */
 
 /*
@@ -9,8 +9,9 @@
 * Plugin URI: https://elegantthemes.com/
 * Description: This plugin adds in <a href="http://codepen.io/andytran/pen/BNjymy">Article News Card</a> styles support for Divi Blog Post modules.
 * Author: Elegant Themes
-* Version: 0.0.3
+* Version: 0.0.4
 * Author URI: http://elegantthemes.com/
+* Text Domain: divi-100-article-card
 * License: GPL3
 */
 
@@ -52,7 +53,7 @@ class ET_Divi_100_Article_Card_Config {
 
 		return array(
 			'main_prefix'        => $main_prefix,
-			'plugin_name'        => __( 'Article Card' ),
+			'plugin_name'        => __( 'Article Card', 'divi-100-article-card' ),
 			'plugin_slug'        => $plugin_slug,
 			'plugin_id'          => "{$main_prefix}{$plugin_slug}",
 			'plugin_prefix'      => "{$main_prefix}{$plugin_slug}-",
@@ -161,15 +162,15 @@ class ET_Divi_100_Article_Card {
 			'activate' => array(
 				'type'              => 'toggle',
 				'id'                => 'activate',
-				'label'             => __( 'Activate Article Card' ),
-				'description'       => __( 'Enable this option to activate the article card style.' ),
+				'label'             => __( 'Activate Article Card', 'divi-100-article-card' ),
+				'description'       => __( 'Enable this option to activate the article card style.', 'divi-100-article-card' ),
 				'sanitize_callback' => 'et_divi_100_sanitize_toggle',
 			),
 			'accent-color' => array(
 				'type'                 => 'color',
 				'id'                   => 'accent-color',
-				'label'                => __( 'Select Accent Color' ),
-				'description'          => __( 'The color you choose will be used as color on category, date, and sub-title of the article card style.' ),
+				'label'                => __( 'Select Accent Color', 'divi-100-article-card' ),
+				'description'          => __( 'The color you choose will be used as color on category, date, and sub-title of the article card style.', 'divi-100-article-card' ),
 				'sanitize_callback'    => 'et_divi_100_sanitize_alpha_color',
 				'default'              => '#ffffff',
 			),
