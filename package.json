@@ -1,8 +1,10 @@
 {
   "name": "divi-100-article-card",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "This plugin looks for any page that has the Blog Module enabled and applies a new style too.",
   "main": "article-card.php",
+  "tags": "français, fxbenard, Divi, Elegant Themes",
+  "upto": "4.5.3",
   "scripts": {
     "start": "./bin/start",
     "autoprefixer": "./bin/autoprefixer",
@@ -22,8 +24,43 @@
   "bugs": {
     "url": "https://github.com/andyhqtran/divi-100-article-card/issues"
   },
-  "homepage": "https://github.com/andyhqtran/divi-100-article-card#readme",
+   "contributors": {
+      "name": "FX Bénard",
+      "url": "fxbenard.com"
+    },
+  "directories": {
+    "js": "./assets/js",
+    "css": "./assets/css",
+    "build": "./build",
+    "languages": "./languages"
+  },
+  "pot": {
+    "type": "wp-plugin",
+    "textdomain": "divi-100-article-card",
+    "src": "article-card.php",
+    "header": {
+      "bugs": "https://fxbenard.com/",
+      "team": "fxbenard <fx@fxbenard.com>",
+      "last_translator": "fxbenard <fx@fxbenard.com>"
+    }
+  },
+  "homepage": "https://github.com/fxbenard/divi-100-article-card#readme",
   "devDependencies": {
+    "grunt": "^1.0.0",
+    "grunt-checktextdomain": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-rename": "*",
+    "grunt-exec": "*",
+    "grunt-newer": "*",
+    "grunt-notify": "*",
+    "grunt-potomo": "*",
+    "grunt-text-replace": "*",
+    "grunt-wp-i18n": "*",
+    "grunt-wp-readme-to-markdown": "*",
+    "load-grunt-config": "*",
+    "load-grunt-tasks": "*",
     "autoprefixer": "^6.3.6",
     "concurrently": "^2.1.0",
     "csscomb": "^3.1.8",
