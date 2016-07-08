@@ -1,0 +1,119 @@
+# Copyright (C) 2016 Elegant Themes
+# This file is distributed under the GPL3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Divi 100 Article Cards 0.0.3\n"
+"Report-Msgid-Bugs-To: https://fxbenard.com/\n"
+"POT-Creation-Date: 2016-07-08 13:27+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-07-08 13:41+0200\n"
+"Language-Team: fxbenard <fx@fxbenard.com>\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: FX Bénard <fx@fxbenard.com>\n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: article-card.php:57
+msgid "Article Card"
+msgstr "Article Card"
+
+#: article-card.php:166
+msgid "Activate Article Card"
+msgstr "Activer Article Card"
+
+#: article-card.php:167
+msgid "Enable this option to activate the article card style."
+msgstr "Activer cette option pour activer le style Article Card."
+
+#: article-card.php:173
+msgid "Select Accent Color"
+msgstr "Sélectionner la couleur d’accentuation"
+
+#: article-card.php:174
+msgid ""
+"The color you choose will be used as color on category, date, and sub-title "
+"of the article card style."
+msgstr ""
+"La couleur choisie sera utilisée pour la couleur de la catégorie, de la "
+"date et du sous-titre du style Article News Card."
+
+#: divi-100-setup/class-divi-100-settings.php:48
+msgid "Label"
+msgstr "Libellé"
+
+#: divi-100-setup/class-divi-100-settings.php:55
+msgid "Change"
+msgstr "Modifier"
+
+#: divi-100-setup/class-divi-100-settings.php:56
+msgid "Select"
+msgstr "Sélectionner"
+
+#: divi-100-setup/class-divi-100-settings.php:57
+msgid "Remove"
+msgstr "Supprimer"
+
+#: divi-100-setup/class-divi-100-settings.php:58
+msgid "Select Image"
+msgstr "Sélectionner une image"
+
+#: divi-100-setup/class-divi-100-settings.php:59
+msgid "Use This Image"
+msgstr "Utiliser cette image"
+
+#: divi-100-setup/class-divi-100-settings.php:79
+#: divi-100-setup/class-divi-100-settings.php:308
+msgid "Save Changes"
+msgstr "﻿Enregistrer les modifications"
+
+#: divi-100-setup/class-divi-100-settings.php:155
+msgid "Help"
+msgstr "Aide"
+
+#: divi-100-setup/class-divi-100-settings.php:285
+msgid "Your setting has been updated."
+msgstr "Votre réglage a été mis à jour."
+
+#: divi-100-setup/class-divi-100-settings.php:288
+msgid "Error authenticating request. Please try again."
+msgstr ""
+"Une erreur s'est produite pendant la requête d’authentification. Veuillez "
+"recommencer."
+
+#: divi-100-setup/class-divi-100-settings.php:302
+msgid "Dismiss this notice."
+msgstr "Rejeter cet avertissement."
+
+#: divi-100-setup/class-divi-100-settings.php:328
+msgid "General"
+msgstr "Général"
+
+#: divi-100-setup/class-divi-100-settings.php:478
+msgid "Enable"
+msgstr "Activé"
+
+#: divi-100-setup/class-divi-100-settings.php:479
+msgid "Disable"
+msgstr "Désactivé"
+
+#: divi-100-setup/class-divi-100-settings.php:490
+msgid "Reset Color"
+msgstr "Réinitialiser la couleur"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin adds in <a href=\"http://codepen.io/andytran/pen/BNjymy"
+"\">Article News Card</a> styles support for Divi Blog Post modules."
+msgstr ""
+"Cette extension ajoute la prise en charge du style <a href=\"http://codepen."
+"io/andytran/pen/BNjymy\">Article News Card</a> aux modules d’article de "
+"Divi."
