@@ -1,9 +1,9 @@
 === Divi 100 Article Card ===
 Contributors: andyhqtran, fxbenard
-Tags:
+Tags: français, fxbenard, Divi, Elegant Themes
 Requires at least: 3.8
-Tested up to: 4.5.2
-Stable tag: 0.0.2
+Tested up to: 4.5.3
+Stable tag: 0.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
