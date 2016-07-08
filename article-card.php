@@ -1,8 +1,9 @@
 <?php
 /**
-* @package Custom_Article_Cards
-* @version 0.0.3
-*/
+ * @package Custom_Article_Cards
+ * @version 0.0.3
+ */
+
 /*
 * Plugin Name: Divi 100 Article Cards
 * Plugin URI: https://elegantthemes.com/
@@ -12,7 +13,6 @@
 * Author URI: http://elegantthemes.com/
 * License: GPL3
 */
-
 
 /**
  * Register plugin to Divi 100 list
@@ -29,10 +29,10 @@ class ET_Divi_100_Article_Card_Config {
 	}
 
 	/**
-	* Gets the instance of the plugin
-	*/
-	public static function instance(){
-		if ( null === self::$instance ){
+	 * Gets the instance of the plugin
+	 */
+	public static function instance() {
+		if ( null === self::$instance ) {
 			self::$instance = new self();
 		}
 
@@ -77,15 +77,14 @@ class ET_Divi_100_Article_Card_Config {
 	 * Init plugin after all plugins has been loaded
 	 */
 	function init() {
-		// Load Divi 100 Setup
+		// Load Divi 100 Setup.
 		require_once( plugin_dir_path( __FILE__ ) . 'divi-100-setup/divi-100-setup.php' );
 
-		// Load Article Card
+		// Load Article Card.
 		ET_Divi_100_Article_Card::instance();
 	}
 }
 ET_Divi_100_Article_Card_Config::instance();
-
 
 /**
  * Load Article Cards
@@ -102,8 +101,8 @@ class ET_Divi_100_Article_Card {
 	/**
 	 * Gets the instance of the plugin
 	 */
-	public static function instance(){
-		if ( null === self::$instance ){
+	public static function instance() {
+		if ( null === self::$instance ) {
 			self::$instance = new self();
 		}
 
@@ -113,12 +112,12 @@ class ET_Divi_100_Article_Card {
 	/**
 	 * Constructor
 	 */
-	private function __construct(){
+	private function __construct() {
 		$this->config   = ET_Divi_100_Article_Card_Config::info();
 		$this->settings = maybe_unserialize( get_option( $this->config['plugin_id'] ) );
 		$this->utils    = new Divi_100_Utils( $this->settings );
 
-		// Initialize if Divi is active
+		// Initialize if Divi is active.
 		if ( et_divi_100_is_active() ) {
 			$this->init();
 		}
@@ -129,7 +128,7 @@ class ET_Divi_100_Article_Card {
 	 *
 	 * @return void
 	 */
-	private function init(){
+	private function init() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_scripts' ) );
 		add_filter( 'body_class',         array( $this, 'body_class' ) );
 
@@ -167,13 +166,14 @@ class ET_Divi_100_Article_Card {
 
 	/**
 	 * Load front end scripts
+	 *
 	 * @return void
 	 */
 	function enqueue_frontend_scripts() {
 		wp_enqueue_style( 'custom-article-cards', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), $this->config['plugin_version'] );
 		wp_enqueue_script( 'custom-article-cards', plugin_dir_url( __FILE__ ) . 'assets/js/scripts.js', array( 'jquery', 'divi-custom-script' ), $this->config['plugin_version'], true );
 
-		// Add custom css
+		// Add custom css.
 		$settings             = $this->settings_fields();
 		$accent_color_default = $settings['accent-color']['default'];
 		$accent_color         = $this->utils->get_value( 'accent-color', $accent_color_default );
@@ -181,7 +181,7 @@ class ET_Divi_100_Article_Card {
 		if ( $accent_color && $accent_color !== $accent_color_default ) {
 			$custom_css = sprintf(
 				'.divi-100-article-card .et_pb_blog_grid .article-card__category,
-				.divi-100-article-card .et_pb_blog_grid .article-card__date { background-color: %1$s; }
+                .divi-100-article-card .et_pb_blog_grid .article-card__date { background-color: %1$s; }
 				.divi-100-article-card .et_pb_blog_grid .article-card__sub-title { color: %1$s; }',
 				et_divi_100_sanitize_alpha_color( $accent_color )
 			);
@@ -190,14 +190,15 @@ class ET_Divi_100_Article_Card {
 	}
 
 	/**
-	* Add specific class to <body>
-	* @return array
-	*/
+	 * Add specific class to <body>
+	 *
+	 * @return array
+	 */
 	function body_class( $classes ) {
-		// Get selected style
+		// Get selected style.
 		$activation = et_divi_100_sanitize_toggle( $this->utils->get_value( 'activate' ) );
 
-		// Assign specific class to <body> if needed
+		// Assign specific class to <body> if needed.
 		if ( ! is_admin() && 'on' === $activation ) {
 			$classes[] = esc_attr( 'divi-100-article-card' );
 		}
